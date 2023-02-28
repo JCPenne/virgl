@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "reset": "psql -U jackpalmer -d quiz < database.sql && psql -U jackpalmer -d quiz < seeds.sql"
   },
   "keywords": [],
   "author": "",
