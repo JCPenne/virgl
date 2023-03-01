@@ -1,12 +1,8 @@
-CREATE DATABASE quiz;
+CREATE DATABASE 'db';
 
-DROP TABLE IF EXISTS questions CASCADE;
+DROP TABLE IF EXISTS 'table' CASCADE;
 
-CREATE TABLE questions(
+CREATE TABLE 'table'(
   id SERIAL PRIMARY KEY,
-  question VARCHAR(255),
-  optionone VARCHAR(255),
-  optiontwo VARCHAR(255),
-  optionthree VARCHAR(255),
-  answer VARCHAR(255)
+  
 )
