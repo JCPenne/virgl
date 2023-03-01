@@ -8,9 +8,9 @@ const app = express();
 app.use(cors());
 app.use(json());
 
-app.get('/questions', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
-    const allQuestions = await Pool.query('Select * from questions');
+    const allQuestions = await Pool.query('');
     res.json(allQuestions.rows);
   } catch (err) {
     console.log(err.message);
