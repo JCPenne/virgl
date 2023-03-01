@@ -10,8 +10,9 @@ app.use(json());
 
 app.get('/', async (req, res) => {
   try {
-    const allQuestions = await Pool.query('');
-    res.json(allQuestions.rows);
+    // const allQuestions = await Pool.query('');
+    // res.json(allQuestions.rows);
+    console.log('get endpoint hit');
   } catch (err) {
     console.log(err.message);
   }
